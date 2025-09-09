@@ -1,0 +1,36 @@
+{
+    "name": "bazegel/laravel-monobank",
+    "description": "Laravel package for Monobank",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^7.24"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bazegel\\Monobank\\": "src/",
+            "Bazegel\\Monobank\\tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bazegel\\Monobank\\Providers\\MonobankServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Bohdan Leheza",
+            "email": "admin@bazegel.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^5.0"
+    },
+    "autoload-dev": {
+        "Bazegel\\Monobank\\tests\\": "tests/"
+    }
+}
